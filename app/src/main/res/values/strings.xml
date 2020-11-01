@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="title_activity_act_logeado">Info NFL</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_act_no_logeado">actNoLogeado</string>
+    <string name="texto">   Posibles ganadores del Super Bowl LV según sus altas y bajas en el mercado de fichajes
+            \n1.- Kansas City Chiefs. Actuales campeones, Mahomes el mejor QB de la actualidad.
+            \n2.- Baltimore Ravens. De la mano de Lamar Jackson los Ravens son favoritos para ganar el Super Bowl.
+            \n3.- San Francisco 49ers. Subcampeones de la temporada pasada, campeones de la conferencia nacional.
+            \n4.- New Orleans Saints. Cuentan con receptores dentro del top 3% de toda la NFL.
+            \n5.- Tampa Bay Buccaneers. La llegada de Tom Brady eleva totalmente sus probabilidades de ganar.
+    </string>
+</resources>

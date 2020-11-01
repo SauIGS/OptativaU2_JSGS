@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor"
+    tools:context=".actLogeado">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapo"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.IEU2_JSGS.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:background="@color/primaryDarkColor"
+            app:popupTheme="@style/Theme.IEU2_JSGS.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_act_logeado" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="661dp"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/mapo"
+        app:layout_anchorGravity="center">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:fontFamily="monospace"
+            android:text="@string/texto"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            tools:text="@string/texto" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="203dp"
+            app:srcCompat="@drawable/bowl"
+            tools:srcCompat="@drawable/bowl" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Te ha resultado útil la información?"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbUtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Es útil"
+                android:textColor="@color/primaryTextColor" />
+
+            <RadioButton
+                android:id="@+id/rbNoUtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No es útil"
+                android:textColor="@color/primaryTextColor" />
+
+            <Button
+                android:id="@+id/btnOp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Votar"
+                android:textColor="@color/primaryTextColor" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:text="Button" />
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
